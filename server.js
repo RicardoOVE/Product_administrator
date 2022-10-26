@@ -8,6 +8,9 @@ create folders
 npx create-react-app client
 npm install axios react-router-dom@5.3.0
 
+cd client <- si genera error 
+npm start
+
 1ra terminal:
 npm start
 

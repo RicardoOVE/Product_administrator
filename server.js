@@ -27,5 +27,7 @@ app.use(
 require('.server/config/mongoose.config')
 
 // Importar las rutas
+const misRutas = require('./server/routes/producto.routes');
+misRutas(app);
 
 app.listen(8000, ()=>console.log('Servidor corriendo!'));

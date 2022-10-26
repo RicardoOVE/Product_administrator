@@ -1,12 +1,18 @@
 /*
 npm init -y
-"start": "nodedemon server.js"
+"start": "nodemon server.js"
 npm install express mongoose cors
 create folders
 
 2nda terminal (instalación React):
 npx create-react-app client
 npm install axios react-router-dom@5.3.0
+
+1ra terminal:
+npm start
+
+Agregar link a bootstrap en index.html
+Quitar <React.StrictMode> en index.js
 */
 
 const express = require('express');
@@ -24,7 +30,7 @@ app.use(
 );
 
 // inicializar DB
-require('.server/config/mongoose.config')
+require('./server/config/mongoose.config')
 
 // Importar las rutas
 const misRutas = require('./server/routes/producto.routes');
